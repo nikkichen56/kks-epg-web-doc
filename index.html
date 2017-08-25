@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<!--
+*
+* Copyright (C) 2016, bitmovin GmbH, All Rights Reserved
+*
+* Created on: 2015-07-25 11:35:04
+* Author:     bitmovin GmbH <dash-player@bitmovin.com>
+*
+* This source code and its use and distribution, is subject to the terms
+* and conditions of the applicable license agreement.
+*
+-->
+<html lang="en">
+<head>
+  <title>Handover</title>
+  <meta charset="UTF-8"/>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+  <style>
+    .tab-pane > img {
+      width: 100%
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h3>Components in kks-epg-editor</h3>
+    <!-- navi tabs -->
+    <div class="col-ms-3">
+      <ul class="nav nav-tabs" id="componentTabs">
+        <li><a href="#ActioinCard" data-toggle="tab">ActioinCard</a></li>
+        <li><a href="#BatchDeleteRange" data-toggle="tab">BatchDeleteRange</a></li>
+        <li><a href="#Belt" data-toggle="tab">Belt</a></li>
+        <li><a href="#CalendarToolbar" data-toggle="tab">CalendarToolbar</a></li>
+        <li><a href="#ChannelEditor" data-toggle="tab">ChannelEditor</a></li>
+        <li><a href="#ChannelList" data-toggle="tab">ChannelList</a></li>
+        <li><a href="#DropdownSelect" data-toggle="tab">DropdownSelect</a></li>
+        <li class="active"><a href="#Home" data-toggle="tab">Home</a></li>
+        <li><a href="#MultiSelect" data-toggle="tab">MultiSelect</a></li>
+        <li><a href="#Tab" data-toggle="tab">Tab</a></li>
+        <li><a href="#Tip" data-toggle="tab">Tip</a></li>
+        <li><a href="#TitleEditor" data-toggle="tab">TitleEditor</a></li>
+        <li><a href="#TitleEvent" data-toggle="tab">TitleEvent</a></li>
+      </ul>
+    </div>
+    <!-- tab panes -->
+    <div class="col-ms-9">
+      <div class="tab-content">
+        <div class="tab-pane" id="ActioinCard">
+          <p>On both the channels/ and the programs/ page</p>
+          <img src="./images/action_card-1.png" alt="">
+          <img src="./images/action_card-2.png" alt="">
+        </div>
+        <div class="tab-pane" id="BatchDeleteRange">
+          <p>On the programs/ page</p>
+          <img src="./images/batch_delete_range.png" alt="">
+        </div>
+        <div class="tab-pane" id="Belt">
+          <p>On the channels/ page</p>
+          <img src="./images/belt.png" alt="">
+        </div>
+        <div class="tab-pane" id="CalendarToolbar">
+          <p>On the programs/ page</p>
+          <img src="./images/calendar_toolbar.png" alt="">
+        </div>
+        <div class="tab-pane" id="ChannelEditor">
+          <p>On the channels/ page</p>
+          <img src="./images/channel_editor-1.png" alt="">
+          <img src="./images/channel_editor-2.png" alt="">
+        </div>
+        <div class="tab-pane" id="ChannelList">
+          <p>On the channels/ page</p>
+          <img src="./images/channel_list.png" alt="">
+        </div>
+        <div class="tab-pane" id="DropdownSelect">
+          <p>On the channels/ page</p>
+          <p>Not collapsed</p>
+          <img src="./images/dropdown_select-1.png" alt="">
+          <p>Collapsed</p>
+          <img src="./images/dropdown_select-2.png" alt="">
+        </div>
+        <div class="tab-pane in active" id="Home">
+          <p>On both the channels/ and the programs/ page</p>
+          <img src="./images/home.png" alt="">
+        </div>
+        <div class="tab-pane" id="MultiSelect">
+          <p>On the channels/ page</p>
+          <p>Not collapsed</p>
+          <img src="./images/multiple_select-1.png" alt="">
+          <p>Collapsed</p>
+          <img src="./images/multiple_select-2.png" alt="">
+        </div>
+        <div class="tab-pane" id="Tab">
+          <p>On the programs/ page</p>
+          <img src="./images/tab.png" alt="">
+        </div>
+        <div class="tab-pane" id="Tip">
+          <p>On everywhere</p>
+          <img src="./images/tip.png" alt="">
+        </div>
+        <div class="tab-pane" id="TitleEditor">
+          <p>On the programs/ page</p>
+          <img src="./images/title_editor-1.png" alt="">
+          <img src="./images/title_editor-2.png" alt="">
+        </div>
+        <div class="tab-pane" id="TitleEvent">
+          <p>On the programs/ page</p>
+          <img src="./images/title_event.png" alt="">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script type="text/javascript">
+    $('#componentTabs a').click(function (e){
+      $(this).tab('show');
+    })
+  </script>
+</body>
+</html>
